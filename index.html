@@ -1,86 +1,152 @@
-/* Tomei a liberdade de criar uma página sobre o meu atual emprego */
-<html>
-    <head>
-        <TITLE>EXERCÍCIO DE APRENDIZAGEM</TITLE>
-    </head>
-    <body>
-        <h1 id="topo">LARGÁS COMÉRCIO DE GÁS E ÁGUA</h1>
-        <hr />
-        <h2 id="Menus">Menus</h2>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <TITLE>EXERCÍCIO DE APRENDIZAGEM</TITLE>
+    <style>
+        table {
+            border: solid 1px ;
+        }
+        table thead {
+            background-color: blue;
+            color: white
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: lightgray;
+        }
+        table tbody tr:hover td {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="topo">LARGÁS COMÉRCIO DE GÁS E ÁGUA</h1>
+    <hr />
+        <div id="Menus"></div>
         <ul>
             <li><a href="#somos">Quem somos</a></li>
-            <li><a href="#missao">Nossa missão</a></li>
             <li><a href="#atuacao">Ramo de atuação</a></li>
+            <li><a href="#missao">Nossa missão</a></li>
             <li><a href="#produtos">Produtos Comercializados por nós</a></li>
             <li><a href="#integrantes">Quem compõe a empresa?</a></li>
             <li><a href="#links">Links úteis</a></li>
-
         </ul>
-        <hr />
-        <h2 id="somos">Quem somos</a></h2>
-        <p>Situados na cidade de Estância-SE, somos um ponto de <i>revenda autorizado <strong>Ultragaz</strong></i> de <a href="https://www.petrobras.com.br/quem-somos/gas-liquefeito-de-petroleo" target="_blank">GLP</a> (Gás Liquefeito de Petróleo).</p>
-        <small><a href="#topo">Voltar</a></small> 
-            
+    <hr />
+       <fieldset>
+                <legend id="somos">Quem somos</a></legend>
+                <p>Situados na cidade de Estância-SE, somos um ponto de <i>revenda autorizado <b>Ultragaz</b></i> de <a href="https://www.petrobras.com.br/quem-somos/gas-liquefeito-de-petroleo" target="_blank">GLP</a> (Gás Liquefeito de Petróleo).</p>
+            <small><a href="#topo">Voltar ao topo</a></small>
+        </fieldset>
         <h2 id="atuacao">Ramo de atuação</h2>
         <p>Atuamos no mercado de atacado e varejo dando suporte aos pequenos comerciantes locais, realizando fornecimento em diversas regiões litorâneas da cidade e não podemos esquecer dos clientes residênciais que são o carro chefe da empresa.</p>
         <small><a href="#topo">Voltar</a></small>
 
         <h2 id="missao">Nossa missão</h2>
         <p>Tentamos dar nosso melhor indepentende da situação. Como já disse o ilustre Ayrton Senna:</p>
-        <blockquote><i>"No que diz respeito ao <strong>empenho</strong>, ao <strong>compromisso</strong>, ao <strong>esforço</strong>, à <strong>dedicação</strong>, não existe meio termo. <mark>Ou você faz uma coisa bem feita ou não faz</mark>."</i></blockquote>
+        <blockquote><i>"No que diz respeito ao <b>empenho</b>, ao <b>compromisso</b>, ao <b>esforço</b>, à <b>dedicação</b>, não existe meio termo. <mark>Ou você faz uma coisa bem feita ou não faz</mark>."</i></blockquote>
         <small><a href="#topo">Voltar</a></small>
 
         <h2 id="produtos">Produtos</h2>
-        <ol>
+        <ul>
             <li>Água Mineral da marca Entre Rios</li>
             <li>GLP 13Kg (Gás de cozinha)</li>
             <li>GLP 20Kg (Utilizado em empilhadeiras)</li>
             <li>GLP 45Kg (Utilizado em restaurantes, padarias e afins)</li>
-        </ol>
+        </ul>
         <small><a href="#topo">Voltar</a></small>
 
         <h2 id="integrantes">Quem compõe a empresa?</h2>
         <p>A empresa é dirigida atualmente pelo sócio proprietário <i>Rui Jr</i><sup>1</sup> e sua esposa <i>Meiryellen Guimarães</i><sup>2</sup> (também proprietária da Loja <a href="https://mgconcept.com.br" target="_blank"><strong>MG Concept</a></strong>).</p>
         <p>Seu atual gerente Luiz Viana (o mesmo que escreve essa simples page), está no cargo há pouco mais que 1 ano.</p>
-        <p>Temos um total de 15 colaboradores para atender toda a demanda da loja de forma rápida e segura. Sendo eles:</p>
-        <ol>
-            <li>Atendentes</li>
-                <ul>
-                    <li>André Maciel</li>
-                    <li>Raphael Lessa</li>
-                </ul>
-            <li>Motoristas de caminhão</li>
-                <ul>
-                    <li>Antônio Menezes</li>
-                    <li>Gilmar Melo</li>
-                </ul>
-            <li>Motoristas de veículos pequenos</li>
-                <ul>
-                    <li>Lucas Araujo</li>
-                    <li>Wesley Feitosa</li>
-                </ul>                
-            <li>Ajudantes dos veículos pequenos</li>
-                <ul>
-                    <li>Joemerson Andrade</li>
-                    <li>Pedro Andrade</li>
-                </ul>
-            <li>Entregadores</li>
-                <ul>
-                    <li>Alexsandro Souza</li>
-                    <li>Fábio Lima</li>
-                    <li>José Anastácio</li>
-                    <li>Hugo Sabino</li>
-                    <li>David Móises</li>
-                    <li>Marcos Neto</li>
-                    <li>André Luiz</li>
-                </ul>
-        </0l>
+        <p>Para atender a demanda da loja de forma rápida e segura, contamos com uma boa quantidade de colaboradores, sendo eles:</p>
+    <table width="450" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+            <th title="Nome do funcionário">Funcionário</th>
+            <th>Função</th>
+            <th>Setor</th>
+        </thead>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Luiz Viana</td>
+                <td>Gerente logístico</td>
+                <td>Geral</td>
+            </tr>
+            <tr>
+                <td>André Maciel</td>
+                <td>Atendente</td>
+                <td>Comercial</td>
+            </tr>
+            <tr>
+                <td>Raphael Lessa</td>
+                <td>Atendente</td>
+                <td>Comercial</td>
+            </tr>
+            <tr>
+                <td>Antônio Menezes</td>
+                <td>Motorista de caminhão</td>
+                <td>Logistíca da água</td>
+            </tr>
+            <tr>
+                <td>Gilmar Melo</td>
+                <td>Motorista de caminhão</td>
+                <td>Logistíca do gás</td>
+            </tr>
+            <tr>
+                <td>Pedro Messias</td>
+                <td>Ajudante</td>
+                <td>Logistica geral</td>
+            </tr>
+            <tr>
+                <td>Alexsandro Souza</td>
+                <td>Entregador</td>
+                <td>Comercial / gás</td>
+            </tr>
+            <tr>
+                <td>André Luiz</td>
+                <td>Entregador</td>
+                <td>Comercial / gás</td>
+            </tr>
+            <tr>
+                <td>Davi Moises</td>
+                <td>Entregador</td>
+                <td>Comercial / água</td>
+            </tr>
+            <tr>
+                <td>Everton Luiz</td>
+                <td>Entregador</td>
+                <td>Comercial / água</td>
+            </tr>
+            <tr>
+                <td>Hugo Sabino</td>
+                <td>Entregador</td>
+                <td>Comercial / água</td>
+            </tr>
+            <tr>
+                <td>Izaias Luiz</td>
+                <td>Entregador</td>
+                <td>Comercial / gás</td>
+            </tr>
+            <tr>
+                <td>José Anastácio</td>
+                <td>Entregador</td>
+                <td>Comercial / gás</td>
+            </tr>
+            <tr>
+                <td>Rodrigo</td>
+                <td>Entregador</td>
+                <td>Comercial / gás</td>
+            </tr>
+        </tbody>
+    </table>
         <small><a href="#topo">Voltar</a></small>
 
         <h2>Links úteis</h2>
         <p>1: Rui Jr.: <a href="https://www.instagram.com/ruiguimaraesjr">Instagram</a></p>
         <p>2: Meiryellen: <a href="https://www.instagram.com/meiryellen">Instagram</a></p>
-        <p>Largás Estância: <a href="https://linktr.ee/largas">Conheça nossa loja</a></p>
+        <p><a href="https://linktr.ee/largas">Conheça nossa loja</a></p>
 
-    </body>
+</body>
 </html>
